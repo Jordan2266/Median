@@ -1,10 +1,14 @@
-<!DOCTYPE html>
 <html>
 <head>
 
 <button type="button" onclick= "myfunction()">Median</button>
 
-<p id="Inputs"
+<p id="Input1"></p>
+<p id="Input2"></p>
+<p id="Input3"></p>
+<p id="Input4"></p>
+<p id="Input5"></p>
+
 
 <script>
 function myfunction () {  
@@ -14,6 +18,11 @@ var Input3 = prompt ("Please enter third number");
 var Input4 = prompt ("Please enter fourth number");
 var Input5 = prompt ("Please enter fifth number");
     if (doc != null) { 
+  document.getElementById("Input1").innerHTML =
+  document.getElementById("Input2").innerHTML =
+  document.getElementById("Input3").innerHTML =
+  document.getElementById("Input4").innerHTML =
+  document.getElementById("Input5").innerHTML =
 const median = arr => {
   const mid = Math.floor(arr.length / 2),
     nums = [...arr].sort((a, b) => a - b);
